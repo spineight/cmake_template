@@ -26,6 +26,7 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     add_subdirectory(docs)
 
     if(cmake_template_enable_testing)
+        ## https://cliutils.gitlab.io/modern-cmake/chapters/testing.html
         # will enable testing and set a BUILD_TESTING option so users can turn testing on and off
         # (along with a few other things)
         include(CTest)
