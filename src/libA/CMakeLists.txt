@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.9)
-project(cmake_template_libA)
-
 set(SOURCES
     libA.cpp
 )
 
-add_library(cmake_template_libA ${SOURCES})
+add_library(cmake_template_libA "")
+
+#### target_sources can be called in inner directory (once target is created) - this idea is used at Sixts
+target_sources(cmake_template_libA PRIVATE libA.cpp)
 add_library(cmake_template::libA ALIAS cmake_template_libA)
 
 

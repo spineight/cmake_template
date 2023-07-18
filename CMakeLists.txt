@@ -2,7 +2,7 @@
 # https://cliutils.gitlab.io/modern-cmake/chapters/install.html
 
 cmake_minimum_required(VERSION 3.9)
-project(cmake_template)
+project(cmake_template DESCRIPTION "cmake template as a reference for cmake functionality")
 
 #make sure we can import our cmake functions (borrowed from: https://github.com/google/benchmark )
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")

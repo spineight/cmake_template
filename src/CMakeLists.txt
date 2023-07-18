@@ -1,6 +1,3 @@
-cmake_minimum_required(VERSION 3.9)
-project(cmake_template_main)
-
 set(SOURCES
     main.cpp
 )
